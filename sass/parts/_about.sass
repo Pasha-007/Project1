@@ -1,0 +1,80 @@
+.about
+    &_text
+        +tablet
+            text-align: center
+    &_us 
+        font-size: rem(16px)
+        color: #88BA7D
+        margin-bottom: 27px
+    &_title
+        font-size: rem(30px)
+        color: #484848
+        margin-bottom: 45px
+    &_description
+        font-size: rem(17px)
+        line-height: 148%
+        color: #484848
+        margin-bottom: 74px
+    &_box
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        column-gap: 24px
+        align-items: center
+        +desktop
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            column-gap: 24px
+            align-items: center
+        +laptop
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            column-gap: 24px
+            align-items: center
+        +tablet
+            display: flex
+            flex-direction: column
+            text-align: center
+    &_item
+        padding: 40px 32px 56px 42px
+        background: #FFFFFF
+        box-shadow: -1px -1px 9px rgba(75, 75, 75, 0.15)
+        border-radius: 10px
+        & h2
+            font-size: rem(20px)
+            line-height: 135%
+            color: #484848
+            margin-top: 40px
+            margin-bottom: 28px
+        & p
+            font-size: rem(14px)
+            line-height: 148%
+            color: #484848
+            margin-bottom: 28px
+        & a 
+            font-size: rem(17px)
+            line-height: 148%
+            color: #88BA7D
+
+    &_detail
+        margin-left: 73px
+        & h2
+            font-size: 20px
+            line-height: 135%
+            color: #484848
+            margin-bottom: 94px
+        & p
+            font-size: rem(14px)
+            line-height: 18px
+            color: rgba(72, 72, 72, 1)
+            margin-bottom: 43px
+        & a
+            font-size: 20px
+            line-height: 135%
+            color: #88BA7D
+        +tablet
+            margin-top: 90px
+            text-align: center
+
+        
+    
+    

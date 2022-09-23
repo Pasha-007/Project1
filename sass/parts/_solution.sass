@@ -1,0 +1,83 @@
+.solution
+    margin-top: 170px
+    background-image: url(../images/solution.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center 0px
+    background-attachment: fixed
+    background: url 0 0 no-repeat
+    height: 100vh
+    &_block
+        width: 50%
+        height: 100vh
+        background: rgba(34, 42, 52, 0.7)
+        backdrop-filter: blur(4px)
+        display: flex
+        align-items: center
+        justify-content: center
+        +desktop 
+            width: 100%
+            text-align: center
+            padding: 0 20px
+        +tablet
+            width: 100%
+            text-align: center
+            padding: 0 20px
+    &_info
+        margin-left: 70px
+        +phone
+            margin-left: 0
+    &_detail
+        h2
+            font-weight: 700
+            font-size: rem(30px)
+            line-height: 40px
+            color: #FFFFFF
+            margin-bottom: 27px
+            +phone 
+                font-size: rem(15px)
+    &_sub
+        font-size: rem(16px)
+        line-height: 20px
+        color: #FFFFFF
+        margin-bottom: 27px
+        +phone 
+            font-size: rem(10px)
+        
+    &_description
+        font-size: rem(17px)
+        line-height: 148%
+        color: #FFFFFF
+        margin-bottom: 22px
+        +phone 
+            font-size: rem(10px)
+    &_description2
+        font-size: rem(17px)
+        line-height: 148%
+        color: #FFFFFF
+        margin-bottom: 89px
+        +tablet 
+            margin-bottom: 30px
+        +phone 
+            font-size: rem(10px)
+    &_row
+        display: grid
+        grid-template-columns: 1fr 1fr
+        margin-right: 184px
+        +tablet 
+            display: flex
+            flex-direction: column
+            text-align: center
+            width: 100%
+            margin-bottom: 20px
+            margin-right: 0
+    &_col
+        img
+            margin-right: 22px
+        li
+            font-size: rem(20px)
+            line-height: 135%
+            color: #FFFFFF
+            margin-bottom: 19px
+            +phone
+                font-size: rem(10px)

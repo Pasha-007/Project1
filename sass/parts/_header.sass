@@ -1,0 +1,61 @@
+.header
+    padding: 33px 0
+    position: fixed
+    width: 100%
+    z-index: 10
+    &_block 
+        display: flex
+        align-items: center
+        justify-content: space-between 
+    &_menu
+        display: grid
+        align-items: center
+        +tablet
+            display: none
+        &.active
+            display: flex
+            flex-direction: column
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100vh
+            background: #343434
+            align-items: center
+            justify-content: center
+            & ul 
+                
+                flex-direction: column 
+            & li
+                &:first-child
+                    text-decoration: underline
+                margin-right: 0
+                margin-bottom: 60px
+                text-align: center
+            & a
+                font-size: rem(40px)
+                color: #fff    
+    &_menu ul
+        display: flex
+    &_item
+        margin-right: 40px
+        &:last-child
+            margin-right: 0
+    &_item a
+        font-size: 15px
+        line-height: 19px
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+        &:hover
+            color: #9aa8b5
+    &_logo
+        color: #fff
+        font-size: 20px
+        line-height: 25px
+        text-transform: uppercase
+
+.hamburger
+    display: none
+    +tablet
+        display: block

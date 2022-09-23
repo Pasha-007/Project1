@@ -1,0 +1,58 @@
+.blog
+    &_detail
+        text-align: center
+        h2
+            font-size: rem(30px)
+            line-height: 40px
+            text-align: center
+            color: #484848
+            margin-bottom: 45px
+    &_title
+        font-size: rem(16px)
+        line-height: 20px
+        text-align: center
+        text-transform: uppercase
+        color: #88BA7D
+        margin: 120px 0 27px 0
+    &_description
+        font-size: rem(17px)
+        line-height: 148%
+        color: #484848
+        margin-bottom: 86px
+    &_box
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        column-gap: 16px
+        +desktop
+            display: flex
+            justify-content: center
+            flex-direction: column
+            text-align: center
+    &_item 
+        img
+            margin-bottom: 18px
+            width: 100%
+            +desktop
+                width: 100%
+        h2
+            font-size: 20px
+            line-height: 135%
+            color: #484848
+            margin-bottom: 28px
+        a
+            font-size: rem(17px)
+            line-height: 148%
+            color: #88BA7D
+        +desktop
+            margin-bottom: 21px
+    &_date
+        font-size: rem(14px)
+        line-height: 148%
+        text-transform: uppercase
+        color: #C8C8C8
+        margin-bottom: 14px
+    &_description2
+        font-size: rem(14px)
+        line-height: 148%
+        color: #484848
+        margin-bottom: 28px
